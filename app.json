@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/production/production"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#179B16",
+    "navigationBarTitleText": "砼云",
+    "navigationBarTextStyle": "light",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "img/home1.png",
+        "iconPath": "img/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "img/record1.png",
+        "iconPath": "img/record.png",
+        "pagePath": "pages/production/production",
+        "text": "生产"
+      },
+      {
+        "selectedIconPath": "img/user.png",
+        "iconPath": "img/user1.png",
+        "pagePath": "pages/login/login",
+        "text": "我的"
+      }
+    ]
+  }
+}
