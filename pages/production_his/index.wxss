@@ -1,18 +1,15 @@
 /**index.wxss**/
-.heard{
-  height: 220rpx
-}
 .top{
-  margin-top:220rpx;
-
-  height: 100rpx
+  padding-top:20rpx;
+  margin-top:170rpx;
+  height: 260rpx
 }
 .title{ 
   color: #fff;
   font-size: 24px;
   font-family: Microsoft YaHei;
   font-weight: 400;
-  margin-top: 70rpx;
+  margin-top: 30rpx;
   position: relative;
 }
 .search{
@@ -24,18 +21,13 @@
   vertical-align: middle;
   display: flex;
   align-items:Center;
+  padding: 0 20rpx;
   box-shadow: 0 1px 10px 4px rgba(0,0,0,.06);
 }
 .search-ipt{
   display: inline-block;
   margin-left:20rpx;
   color: #505050;
-}
-.nav{
-  margin-top: 20px;
-  color: #fff;
-  text-align: center;
-  font-size: 14px
 }
 .main{
   top: -80rpx;
@@ -121,4 +113,9 @@
   width: 1px;
   background-color: #e3e3e3;
   margin: 0 20rpx
+}
+.condition{
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx
 }

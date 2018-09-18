@@ -1,69 +1,29 @@
 // pages/login/login.js
 const app = getApp()
 Page({
-
+  
   /**
    * 页面的初始数据
    */
   data: {
-    motto: 'Hello World',
-    userInfo: {},
+    motto: '高淮',
     hasUserInfo: false,
+    auterImg:'',
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   selectSite:function(){
-    console.log("ss")
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../home/home'
     })
   },
-  getUserInfo: function() {
-    wx.login({
-      success: function(res) {
-        if (res.code) {
-          console.log(res.code)
-          //发起网络请求
-          //  wx.request({
-          //    url: '',
-          //    header: {
-          //    },
-          //    success: function (res) {
-          //      console.log(res.data)
-          //    }
-           
-          //  })
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
-      }
-    });
-    wx.getSetting({
-      success: function(res){
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-          wx.getUserInfo({
-            success: function(res) {
-              console.log(res.userInfo)
-            }
-          })
-        }
-      }
-    });
-    // wx.request({
-    //   url: 'http://localhost:8080/test.php', //仅为示例，并非真实的接口地址
-    //   data: {
-    //      x: '' ,
-    //      y: ''
-    //   },
-    //   header: {
-    //     'content-type': 'application/json' // 默认值
-    //   },
-    //   success: function(res) {
-    //     console.log(res.data)
-    //   }
-    // })
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

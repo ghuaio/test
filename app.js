@@ -1,17 +1,46 @@
 //app.js
 App({
   onLaunch: function () {
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+    var that = this;
+    var dataSource = wx.getStorageSync('dataSource');
+    console.log(dataSource)
+    // 加载小程序时登录
+    // if (dataSource){
+    //   wx.login({
+    //     success: function (res) {
+    //       if (res.code) {
+    //         console.log(res.code)
+    //         //发起网络请求
+    //         wx.request({
+    //           url: that.setGeocoderUrl("user/login"),
+    //           method: "post",
+    //           header: {
+    //             "Content-Type": "application/x-www-form-urlencoded"
+    //           },
+    //           data: {
+    //             jsCode: res.code,
+    //             dataSource: dataSource
+    //           },
+    //           success: res => {
+    //             console.log(res)
+    //             if (res.data.status == '200') {
+    //               wx.setStorageSync('Cookie', res.header['Set-Cookie']);
+    //               wx.switchTab({
+    //                 url: '../index/index',
+    //               })
+    //             } else {
+    //               wx.navigateTo({
+    //                 url: '../bindUser/bindUser',
+    //               })
+    //             }
+    //           }
+    //         })
+    //       } else {
+    //         console.log('登录失败！' + res.errMsg)
+    //       }
+    //     }
+    //   });
+    // }   
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -34,6 +63,10 @@ App({
     })
   },
   globalData: {
+    dataId:'',
     userInfo: null
-  }
+  },
+  setGeocoderUrl(address) {
+    return `http://localhost:8080/app/${address}`
+  },
 })

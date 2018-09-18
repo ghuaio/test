@@ -1,19 +1,24 @@
 <!--pages/home/home.wxml-->
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">砼云智能实施助手</view>
-        <view class="page__desc">请选择站点</view>
+    <view class='heard'>
+        
+    </view>
+    <view class='top'>
+
+    <view class=''>
+        <view class='title'>选择站点</view>
+        <!-- <view class='btn'>修改</view> -->
+    </view>
     </view>
     <view class="page__bd page__bd_spacing">
         <view class="kind-list">
             <block wx:for="{{list}}" wx:key="id">
                 <view class="kind-list__item">
-                <navigator url="../index/index" open-type="switchTab">
-                    <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}">                    
+                    <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap='toIndex'>                    
                         <view class="weui-flex__item">{{item.name}}</view>
                         <image class="kind-list__img" src="../../img/soure.png"></image>    
                     </view>
-                </navigator>
+             
                     <!-- <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
                         <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
                             <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">

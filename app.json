@@ -1,16 +1,20 @@
 {
   "pages": [
-    "pages/home/home",
     "pages/index/index",
-    "pages/login/login",
-    "pages/logs/logs",
-    "pages/production/production"
+    "pages/home/home",
+    "pages/setting/setting",
+    "pages/production/production",
+    "pages/bindUser/bindUser",
+    "pages/detail/detail",
+    "pages/msg/msg",
+    "pages/production_his/index"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#179B16",
+    "navigationBarBackgroundColor": "#1296db",
     "navigationBarTitleText": "砼云",
     "navigationBarTextStyle": "light",
-    "backgroundColor": "#f8f8f8"
+    "backgroundColor": "#F2F3F8",
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "color": "#515151",
@@ -18,22 +22,28 @@
     "borderStyle": "black",
     "list": [
       {
-        "selectedIconPath": "img/home1.png",
-        "iconPath": "img/home.png",
+        "selectedIconPath": "img/myorder-sel.png",
+        "iconPath": "img/myorder.png",
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "我的订单"
       },
       {
-        "selectedIconPath": "img/record1.png",
-        "iconPath": "img/record.png",
+        "selectedIconPath": "img/plan-sel.png",
+        "iconPath": "img/plan.png",
         "pagePath": "pages/production/production",
-        "text": "生产"
+        "text": "当前计划"
       },
       {
-        "selectedIconPath": "img/user.png",
-        "iconPath": "img/user1.png",
-        "pagePath": "pages/login/login",
-        "text": "我的"
+        "selectedIconPath": "img/hisplan-sel.png",
+        "iconPath": "img/hisplan.png",
+        "pagePath": "pages/production_his/index",
+        "text": "历史计划"
+      },
+      {
+        "selectedIconPath": "img/setting-sel.png",
+        "iconPath": "img/setting.png",
+        "pagePath": "pages/setting/setting",
+        "text": "设置"
       }
     ]
   }

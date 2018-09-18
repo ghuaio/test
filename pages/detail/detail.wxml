@@ -1,0 +1,75 @@
+<!--pages/detail/detail.wxml-->
+<view class='page' >
+    <view class='heard'>
+        <view class="iconfont icon-fanhui" bindtap='goBack'></view>
+    </view>
+    <view class='top'>
+      <view class=''>
+        <view class='title'>订单详情</view>
+      </view>
+    </view>
+    <view class='main'>
+      <view>
+        <view class='main-line'>
+          <text class='tips'></text>
+          <text class='main-title'>客户信息</text>
+        </view>
+        <view class='main-line'>
+          <text class='main-lable'>订单信息</text>
+          <text class='main-text'>未将撒大大大的</text>
+        </view>
+        <view class='main-line'>
+          <text class='main-lable'>客户名称</text>
+          <text class='main-text'>周富强</text>
+        </view>
+        <view class='main-line'>
+          <text class='main-lable'>签约工厂</text>
+          <text class='main-text'>湖南宁乡南方新材料科技有限公司宁强分公司</text>
+        </view>
+      </view>
+      <view>
+        <view class='main-line'>
+          <text class='tips'></text>
+          <text class='main-title'>订单信息</text>
+        </view>
+        <view class='main-line'>
+          <text class='main-lable'>浇筑部位</text>
+          <text class='main-text'>9#反边</text>
+        </view>
+        <view class='main-line'>
+          <text class='main-lable'>浇筑方式</text>
+          <text class='main-text'>汽车泵</text>
+        </view>
+        <view class='main-line'>
+          <text class='main-lable'>去程运距</text>
+          <text class='main-text'>10</text>
+        </view>
+        <view class='main-line'>
+          <text class='main-lable'>回程运距</text>
+          <text class='main-text'>10</text>
+        </view>
+                <view class='main-line'>
+          <text class='main-lable'>货物类型</text>
+          <text class='main-text'>混凝土</text>
+        </view>
+                <view class='main-line'>
+          <text class='main-lable'>货物名称</text>
+          <text class='main-text'>C10</text>
+        </view>
+                <view class='main-line'>
+          <text class='main-lable'>坍落（拓展）度</text>
+          <text class='main-text'>120+30</text>
+        </view>
+      </view>
+      <view>
+        <view class='main-line'>
+          <text class='tips'></text>
+          <text class='main-title'>其他信息</text>
+        </view>
+        <view class='main-line'>
+          <text class='main-lable'>创建来源</text>
+          <text class='main-text'>MES制单</text>
+        </view>
+      </view>
+    </view>   
+</view>

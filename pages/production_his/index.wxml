@@ -1,13 +1,23 @@
-<!--index.wxml-->
+<!--pages/production_his/index.wxml-->
 <view class="page">
     <view class='heard'>
       <view class='title'>
         <text>站点名称</text>
-        <view class="iconfont icon-xinzengdingdan" bindtap='addOrder' style='position:absolute;right:10rpx;top:0;font-size:24px'></view>
+        <view class="iconfont icon-tianjia jia" bindtap='addOrder' style='position:absolute;right:10rpx;top:0;font-size:30px'></view>
       </view>
     </view>
   <view class='top'>
-
+  <view>
+      <view class='search'>
+        <icon type="search" size="20"></icon>
+        <input class='search-ipt' placeholder='搜索工程名称' confirm-type='search' bindconfirm="commitSearch" value='{{searchText}}' placeholder-style="color:#B0B0B0;font-size:12px"></input>
+      </view>
+      <view class='flex'>
+        <view class='flex_item condition'>开盘时间<text class='iconfont icon-xiala'></text></view>
+        <view class='flex_item condition'>浇筑部位<text class='iconfont icon-xiala'></text></view>
+        <view class='flex_item condition'>强度等级<text class='iconfont icon-xiala'></text></view>
+      </view>
+    </view>
   </view>
   <view class='main'>
   
@@ -35,6 +45,7 @@
       </view>
       </navigator>
     </view>
+
 
   </view>
   <view class="weui-loadmore">

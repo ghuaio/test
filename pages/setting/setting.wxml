@@ -1,0 +1,31 @@
+<!--pages/login/login.wxml-->
+<view class="page">
+      <view class='heard'>        
+      </view>
+      <view class='top'>
+          <view class="userinfo">
+            <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+            <block wx:else>
+              <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+              <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+              <text class="userinfo-organization">绑定的是什么站点头像就随便给个默认</text>
+            </block>
+          </view>
+      </view>
+      <view class='main'>
+          <view class='count'>
+              <view class='count_item'>
+                  <text>2</text>
+                  <text>我的订单</text>
+              </view>
+              <view class='count_item'>
+                  <text>2</text>
+                  <text>我的订单</text>
+              </view>
+              <view class='count_item'>
+                  <text>2</text>
+                  <text>我的订单</text>
+              </view>
+          </view>
+      </view>
+</view>

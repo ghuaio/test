@@ -1,0 +1,54 @@
+/* pages/detail/detail.wxss */
+.title{ 
+  color: #fff;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  margin-bottom: 10rpx;
+}
+.main{
+  top: -100rpx;
+  z-index: 1;
+  box-sizing: border-box;
+  padding-top:20rpx;
+  padding-left:20rpx;  
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  background-color: #fff;
+  border-radius:8px; 
+  box-shadow: 0 1px 10px 4px rgba(0,0,0,.06);  
+}
+.tips{
+  display: inline-block;
+  height: 40rpx;
+  width: 10rpx;
+  background-color: #358EFD;
+}
+.main-title{
+  margin-left: 30rpx;
+  display: inline-block;
+  color: #358EFD;
+  font-weight: 600;
+  line-height: 50rpx
+}
+.main-line{
+  padding: 15rpx 20rpx;
+  display: flex;
+  align-items:Center;
+}
+.main-lable{
+  display: inline-block;
+  font-size: 14px;
+  color: #B0B0B0;
+  width: 20%;
+  line-height: 50rpx;
+  height:100%
+}
+.main-text{
+ font-size: 14px;
+  display: inline-block;
+  color: #383838;
+  line-height: 50rpx;
+  width: 80%;
+}
