@@ -15,17 +15,29 @@
       <view class='main'>
           <view class='count'>
               <view class='count_item'>
-                  <text>2</text>
-                  <text>我的订单</text>
+                  <text class='count_item_text'>2</text>
+                  <text class='count_item_lable'>我的订单</text>
               </view>
               <view class='count_item'>
-                  <text>2</text>
-                  <text>我的订单</text>
+                  <text class='count_item_text'>39</text>
+                  <text class='count_item_lable'>当前计划</text>
               </view>
               <view class='count_item'>
-                  <text>2</text>
-                  <text>我的订单</text>
+                  <text class='count_item_text'>46</text>
+                  <text class='count_item_lable'>历史计划</text>
               </view>
           </view>
+      </view>
+      <view class='setting'>
+        <view class='setting-line'>
+          <text class='iconfont icon-qiehuanzhandian' style='color:#4ea0fe'></text>
+          <text class='set-name'>切换站点</text>
+          <view class="iconfont icon-xiangqing jiantou"></view>
+        </view>
+        <view class='setting-line'>
+          <text class='iconfont icon-wodehetong'  style='color:#ffab15'></text>
+          <text class='set-name'>我的合同</text>
+          <view class="iconfont icon-xiangqing jiantou"></view>
+        </view>
       </view>
 </view>

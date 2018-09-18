@@ -1,4 +1,7 @@
 /* pages/detail/detail.wxss */
+.top{
+  height: 200rpx
+}
 .title{ 
   color: #fff;
   font-size: 24px;
@@ -41,7 +44,7 @@
   display: inline-block;
   font-size: 14px;
   color: #B0B0B0;
-  width: 20%;
+  width: 30%;
   line-height: 50rpx;
   height:100%
 }
@@ -50,5 +53,5 @@
   display: inline-block;
   color: #383838;
   line-height: 50rpx;
-  width: 80%;
+  width: 70%;
 }
